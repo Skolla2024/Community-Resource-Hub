@@ -221,13 +221,28 @@
                     { id: 'submit', label: 'Add Service' },
                     { id: 'references', label: 'Portfolio' }
                 ],
-                categories: ['Food Assistance', 'Health', 'Youth Services', 'Crisis Support', 'Education', 'Mental Health', 'Housing'],
+                categories: ['Health', 'Food', 'Education', 'Housing', 'Other resources'],
                 resources: [
-                    { id: 1, name: "Valley Food Pantry", category: "Food Assistance", description: "Fresh produce and canned goods available for local families.", address: "123 Main St, Valley City", phone: "555-0101", highlight: true, img: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800" },
-                    { id: 2, name: "Community Health Clinic", category: "Health", description: "Walk-in health services for checkups and flu shots.", address: "456 Oak Ave, Valley City", phone: "555-0102", highlight: true, img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800" },
-                    { id: 3, name: "Valley Youth Mentorship", category: "Youth Services", description: "After-school programs for middle and high school students.", address: "789 Pine Ln, Valley City", phone: "555-0103", highlight: true, img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" },
-                    { id: 4, name: "Crisis Hotline", category: "Crisis Support", description: "Talk to someone 24/7. Completely confidential help.", address: "101 Help Way, Valley City", phone: "555-9911", highlight: false, img: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=800" },
-                    { id: 5, name: "Public Library", category: "Education", description: "Free computer access and study spaces for students.", address: "303 Cedar Ct, Valley City", phone: "555-0105", highlight: false, img: "https://images.unsplash.com/photo-1507733108721-c010ef588959?auto=format&fit=crop&q=80&w=800" }
+                    // HEALTH
+                    { id: 1, name: "Valley Health Center", category: "Health", description: "General checkups, immunizations, and community wellness programs.", address: "456 Oak Ave, Valley City", phone: "555-234-5678", highlight: true, img: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800" },
+                    { id: 2, name: "City Dental Clinic", category: "Health", description: "Affordable dental care for students and families.", address: "202 Maple St, Valley City", phone: "555-876-5432", highlight: false, img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800" },
+                    { id: 3, name: "Vision Care Center", category: "Health", description: "Eye exams and basic eyewear support for the community.", address: "505 Elm St, Valley City", phone: "555-123-9876", highlight: false, img: "https://images.unsplash.com/photo-1574680077505-27464e1253f4?auto=format&fit=crop&q=80&w=800" },
+                    
+                    // FOOD
+                    { id: 4, name: "Community Food Pantry", category: "Food", description: "Emergency food assistance and weekly grocery boxes.", address: "123 Main St, Valley City", phone: "555-456-7890", highlight: true, img: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800" },
+                    { id: 5, name: "Valley Soup Kitchen", category: "Food", description: "Daily hot meals served to those in need of a warm place to eat.", address: "888 Lunch Blvd, Valley City", phone: "555-222-3333", highlight: false, img: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800" },
+                    
+                    // EDUCATION
+                    { id: 6, name: "Learning Center", category: "Education", description: "Free tutoring for high school students and adult literacy classes.", address: "303 School Way, Valley City", phone: "555-333-4444", highlight: true, img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800" },
+                    { id: 7, name: "Public Library Hub", category: "Education", description: "Computers, internet access, and research help for all ages.", address: "303 Cedar Ct, Valley City", phone: "555-999-0000", highlight: false, img: "https://images.unsplash.com/photo-1507733108721-c010ef588959?auto=format&fit=crop&q=80&w=800" },
+                    
+                    // HOUSING
+                    { id: 8, name: "Safe Haven Shelter", category: "Housing", description: "Temporary emergency housing and help finding permanent homes.", address: "404 Haven Road, Valley City", phone: "555-555-6666", highlight: false, img: "https://images.unsplash.com/photo-1448630360428-6547e0d97653?auto=format&fit=crop&q=80&w=800" },
+                    { id: 9, name: "Valley Rent Support", category: "Housing", description: "Legal advice and financial counseling for renters in transition.", address: "12 Habitat St, Valley City", phone: "555-777-8888", highlight: false, img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800" },
+                    
+                    // OTHER
+                    { id: 10, name: "Youth Mentors", category: "Other resources", description: "Big brother/sister style mentoring programs for teens.", address: "789 Pine Ln, Valley City", phone: "555-111-2222", highlight: true, img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" },
+                    { id: 11, name: "Employment Help", category: "Other resources", description: "Resume writing workshops and local job listings.", address: "606 Career Dr, Valley City", phone: "555-444-5555", highlight: false, img: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=800" }
                 ],
                 filteredResources() {
                     return this.resources.filter(r => {
